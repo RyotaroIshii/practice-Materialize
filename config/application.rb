@@ -18,5 +18,8 @@ module Materialize
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.hosts << "0d48985d451545af975e615bb79ea406.vfs.cloud9.ap-northeast-1.amazonaws.com"
+    
+    BetterErrors::Middleware.allow_ip! "0.0.0.0/0"
   end
 end
